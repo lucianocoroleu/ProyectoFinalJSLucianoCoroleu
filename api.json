@@ -1,0 +1,50 @@
+[
+    {
+        "precio": 5000,
+        "id": 1,
+        "titulo": "Remera Chocolat",
+        "imagen": "./assets/images/REMERON-OVERSIZE-beige.jpg"
+    },
+    {
+        "precio": 5000,
+        "id": 2,
+        "titulo": "Remera Essential",
+        "imagen": "./assets/images/REMERON-OVERSIZE-negro.jpg"
+    },
+    {
+        "precio": 10000,
+        "id": 3,
+        "titulo": "Hoddie Bassic Black",
+        "imagen": "./assets/images/HOODIE-CLASSIC-negro.jpg"
+    },
+    {
+        "precio": 10000,
+        "id": 4,
+        "titulo": "Hoddie Bassic Creme",
+        "imagen": "./assets/images/HOODIE-CLASSIC-crema.jpg"
+    },
+    {
+        "precio": 9000,
+        "id": 5,
+        "titulo": "Buzo Over Black",
+        "imagen": "./assets/images/Buzo-Oversize-negro.jpg"
+    },
+    {
+        "precio": 9000,
+        "id": 6,
+        "titulo": "Buzo Over Beige",
+        "imagen": "./assets/images/Buzo-Oversize-beige.jpg"
+    },
+    {
+        "precio": 7000,
+        "id": 7,
+        "titulo": "Jogger Creme",
+        "imagen": "./assets/images/JOGGER-REGULAR-crema.jpg"
+    },
+    {
+        "precio": 7000,
+        "id": 8,
+        "titulo": "Jogger Black",
+        "imagen": "./assets/images/JOGGER-REGULAR-negro.jpg"
+    }
+]

@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "robotoMono";
+    src: url(../fonts/RobotoMono-VariableFont_wght.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+// paleta de colores
+
+$color1: rgb(171, 206, 218);
+$color2: lightblue;
+$color3: rgba(128, 128, 128, 0.37);
+$color4: aquamarine;
+
+// fonts
+
+$font: "robotoMono";
+
+// font size
+
+$sizeTit: 2rem;
+$sizePar: 20px;
+$sizeFoot: 50px;
+$sizeXL: 100%;
+
+// fondo ---------------------------------------------
+
+#fondo {
+    background-color: $color1;
+    background-image: url(../images/marble.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+//nav bar ---------------------------------------------
+
+.navbarImage {
+    width: 100px;
+}
+
+.barra {
+    background-color: $color2;
+    box-shadow: 0 0 5px rgb(111, 192, 219);
+}
+
+.nav-link {
+    color: black !important;
+    text-transform: capitalize;
+    font-family: "robotoMono";
+}
+
+.bannerAutentico {
+    width: $sizeXL;
+    filter: grayscale(100%);
+}
+
+//footer ------------------------------------------------
+
+footer {
+    width: $sizeXL;
+    background-color: $color2;
+    position: absolute;
+    margin-top: 30px;
+
+    .tituloSeccion {
+        color: black;
+        font-family: $font;
+        text-align: center;
+    }
+
+    .legal {
+        color: black;
+        font-family: $font;
+        text-align: center;
+    }
+}
+
+.redesSociales {
+    display: flex;
+    justify-content: center;
+
+    i {
+        font-size: $sizeFoot;
+        padding: $sizePar;
+        color: white;
+    }
+}
+
+// inicio ---------------------------------------------------
+
+.titulo {
+    text-align: center;
+    font-family: $font;
+    text-transform: capitalize;
+    text-shadow: 0 0 5px grey;
+    padding: 35px;
+    font-size: $sizeTit;
+}
+
+.galeria {
+    width: $sizeXL;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 350px);
+    padding: $sizePar;
+    grid-gap: 15px;
+}
+
+.img {
+    box-shadow: 0 0 10px grey;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+}
+
+.img1 {
+    background-image: url(../images/2erDrop\ 2.jpg);
+}
+
+.img2 {
+    background-image: url(../images/ese2.png);
+}
+
+.rounded {
+    height: $sizeXL;
+}
+
+.dbutton {
+    text-align: center;
+    padding: $sizePar*2;
+}
+
+.btn {
+    background-color: $color2;
+    font-family: $font;
+    text-transform: uppercase;
+    padding: 15px 60px;
+    box-shadow: 0 0 10px grey;
+}
+
+.btn:hover {
+    background-color: $color4;
+}
+
+.jumbotron {
+    background-color: $color3;
+    box-shadow: 0 0 30px $color3;
+
+    p {
+        font-family: $font;
+        padding: 30px;
+    }
+}
+
+@media only screen and (min-width:480px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(1, 350px);
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(1, 500px);
+    }
+
+    .containerNos {
+        display: flex;
+    }
+
+    .nleft {
+        width: 40%;
+    }
+
+    .nleft2 {
+        width: 40%;
+    }
+
+    .nright {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(1, 750px);
+    }
+}
+
+@media only screen and (min-width:1550px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(1, 850px);
+    }
+}
+
+// contacto -----------------------------------------------
+
+form {
+    width: 90%;
+    margin: auto;
+    background-color: $color3;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+input,
+textarea {
+    width: $sizeXL;
+    margin-bottom: $sizePar;
+    padding: 10px;
+    font-family: $font;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 150px;
+    max-height: 300px;
+    max-width: $sizeXL;
+}
+
+#botonCont {
+    background-color: $color2;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px grey;
+}
+
+#botonCont:hover {
+    background-color: $color4;
+}
+
+//drops---------------------------------------------------
+
+.carousel-item {
+    height: $sizeXL;
+    background-size: cover;
+    background-position: center;
+}
+
+//sobre nosotros ------------------------------------------
+
+.containerNos {
+    background-color: $color3;
+    width: $sizeXL;
+    height: auto;
+}
+
+.nleft {
+    width: $sizeXL;
+    height: 500px;
+    background-image: url(../images/nosImg.png);
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+}
+
+.nright {
+    width: $sizeXL;
+    padding: $sizePar;
+
+    p {
+        font-family: $font;
+        font-size: $sizePar;
+    }
+}
+
+.nleft2 {
+    width: $sizeXL;
+    height: 500px;
+    background-image: url(../images/queAuten.png);
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+}
+
+// subir -------------------------------------------------
+
+.subir {
+    height: $sizeFoot;
+    width: $sizeFoot;
+    background-color: rgb(99, 169, 192);
+    color: white;
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    text-align: center;
+    font-size: 35px;
+    line-height: $sizeFoot;
+    border-radius: 50%;
+    border: 3px solid rgb(218, 212, 212);
+}
+
+@media screen and (max-width:1024px) {
+    .subir {
+        display: none;
+    }
+}
+
+@import "_inspiracion.scss";
